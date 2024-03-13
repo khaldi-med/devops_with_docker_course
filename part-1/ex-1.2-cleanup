@@ -1,0 +1,57 @@
+learn@hp-pavilion:~$ docker ps -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                      PORTS     NAMES
+960974c4996d   nginx     "/docker-entrypoint.…"   19 minutes ago   Created                               my-nginx2
+fe3dde4e3df0   nginx     "/docker-entrypoint.…"   30 minutes ago   Exited (0) 16 minutes ago             my-nginx
+9483f4956cd8   nginx     "/docker-entrypoint.…"   35 minutes ago   Exited (0) 34 minutes ago             recursing_wu
+learn@hp-pavilion:~$ docker images
+REPOSITORY         TAG       IMAGE ID       CREATED         SIZE
+nginx              latest    92b11f67642b   3 weeks ago     187MB
+hello-world        latest    d2c94e258dcb   10 months ago   13.3kB
+rwxrob/workspace   latest    01fee03d4c41   2 years ago     2.13GB
+learn@hp-pavilion:~$ docker container prune 
+WARNING! This will remove all stopped containers.
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+960974c4996df3d41af2d2590118499fd53750b2ba6ac60bba1998883eb4b429
+fe3dde4e3df0eb4aad054edd21c960d22abf3f7b2098be67687b09473d8c16b7
+9483f4956cd880665662f0175299ebf3d8bf7caf0a973c8df7af9e24dd26a307
+
+Total reclaimed space: 2.186kB
+learn@hp-pavilion:~$ docker images
+REPOSITORY         TAG       IMAGE ID       CREATED         SIZE
+nginx              latest    92b11f67642b   3 weeks ago     187MB
+hello-world        latest    d2c94e258dcb   10 months ago   13.3kB
+rwxrob/workspace   latest    01fee03d4c41   2 years ago     2.13GB
+learn@hp-pavilion:~$ docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+learn@hp-pavilion:~$ docker rmi nginx hello-world rwxrob/workspace
+Untagged: nginx:latest
+Untagged: nginx@sha256:18090843a20ba39719ca4f389d509063ea4fcce9d16c7168f62404b6d630bc3e
+Deleted: sha256:92b11f67642b62bbb98e7e49169c346b30e20cd3c1c034d31087e46924b9312e
+Deleted: sha256:d9e826dbb4b3c5770fe92638baa8c6614f210d782a5d021a123fe9fa1f92c23d
+Deleted: sha256:2a75285e888884bed4d630896c86ecd71739c6e82669e21ad7a050f33c9ac48d
+Deleted: sha256:32bfe3f040358ab8f9872a63d4ddefdc68f35d991ca10a812cbac5912ae9f97b
+Deleted: sha256:1330486eb62ea7e96f384961b77b0fc85f5d4422e761114ef3a72e7cb89751a4
+Deleted: sha256:a375372209a0f2b2c697a52cce46bc41b495bf86184ae83dd5146e20c22078eb
+Deleted: sha256:450787ca55caa59d0288de9cf36fc6b77d1b208a77eb837ec3d25b385f99cafb
+Deleted: sha256:a483da8ab3e941547542718cacd3258c6c705a63e94183c837c9bc44eb608999
+Untagged: hello-world:latest
+Untagged: hello-world@sha256:d000bc569937abbe195e20322a0bde6b2922d805332fd6d8a68b19f524b7d21d
+Deleted: sha256:d2c94e258dcb3c5ac2798d32e1249e42ef01cba4841c2234249495f87264ac5a
+Deleted: sha256:ac28800ec8bb38d5c35b49d45a6ac4777544941199075dff8c4eb63e093aa81e
+Untagged: rwxrob/workspace:latest
+Untagged: rwxrob/workspace@sha256:5ebedf1affe6ffe4736b9751a736359401e4ed91be0136469038cba93e1dd94d
+Deleted: sha256:01fee03d4c41615a36afd1b5007a4734c001a2761ae6d7de41ddaee7fa28388b
+Deleted: sha256:56a3910e8a3a71ac03f57ca720529e48705f166c5286cfaac33b56095d806184
+Deleted: sha256:df7bee09e5ac354e6dd9d0fa49a0b2f99259fa6300a87b09ede826c30e62e911
+Deleted: sha256:1a59e271ec73c356829f1859f568ca4a8674397345a6a8fdab3488a24ae463f1
+Deleted: sha256:bbf95658d2fe17644a0a4441cf0f299538ce6d90ebcc1efe582b447f581bb4ad
+Deleted: sha256:3dd8c8d4fd5b59d543c8f75a67cdfaab30aef5a6d99aea3fe74d8cc69d4e7bf2
+Deleted: sha256:8d8dceacec7085abcab1f93ac1128765bc6cf0caac334c821e01546bd96eb741
+Deleted: sha256:ccdbb80308cc5ef43b605ac28fac29c6a597f89f5a169bbedbb8dec29c987439
+learn@hp-pavilion:~$ docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+learn@hp-pavilion:~$ docker images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+learn@hp-pavilion:~$ 
+

@@ -1,0 +1,6 @@
+learn@hp-pavilion:~$ docker ps -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                      PORTS     NAMES
+960974c4996d   nginx     "/docker-entrypoint.…"   12 minutes ago   Created                               my-nginx2
+fe3dde4e3df0   nginx     "/docker-entrypoint.…"   23 minutes ago   Exited (0) 8 minutes ago              my-nginx
+9483f4956cd8   nginx     "/docker-entrypoint.…"   28 minutes ago   Exited (0) 27 minutes ago             recursing_wu
+
