@@ -1,0 +1,36 @@
+>>>>-- For Alpine --<<<<
+
+/usr/src/app # tail -f text.log 
+2024-03-14 15:40:03 +0000 UTC
+2024-03-14 15:40:05 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-03-14 15:40:07 +0000 UTC
+2024-03-14 15:40:09 +0000 UTC
+2024-03-14 15:40:11 +0000 UTC
+2024-03-14 15:40:13 +0000 UTC
+2024-03-14 15:40:15 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-03-14 15:40:17 +0000 UTC
+2024-03-14 15:40:19 +0000 UTC
+2024-03-14 15:40:21 +0000 UTC
+2024-03-14 15:40:23 +0000 UTC
+2024-03-14 15:40:25 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-03-14 15:40:27 +0000 UTC
+
+
+### The commend:
+	* ~$ docker pull devopsdockeruh/simple-web-service:alpine
+	* ~$ docker run -it devopsdockeruh/simple-web-service:alpine
+	* ~$ docker exec -it trusting_keller sh
+	* /usr/src/app # tail -f text.log
+	* exit
+
+
+
+>>>>-- For Ubuntu --<<<<
+
+* ~$ docker run -d -it devopsdockeruh/simple-web-service:ubuntu
+* ~$ docker exec -it flamboyant_nightingale bash
+* root@951735d08a01:/usr/src/app# tail -f text.log
+* exit 
