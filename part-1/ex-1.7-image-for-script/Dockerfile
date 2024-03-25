@@ -6,4 +6,4 @@ RUN apt update -y && apt install curl -y
 
 COPY script.sh .
 
-CMD ./script.sh
+ENTRYPOINT ["./script.sh"]
