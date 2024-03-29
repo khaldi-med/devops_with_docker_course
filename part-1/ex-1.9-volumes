@@ -1,0 +1,1 @@
+docker run --mount type=bind,source="${PWD}/test.txt",target=/usr/src/app/text.log devopsdockeruh/simple-web-service
