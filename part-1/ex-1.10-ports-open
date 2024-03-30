@@ -1,0 +1,5 @@
+# The cmd:
+~$ docker run -p 3456:8080 devopsdockeruh/simple-web-service server
+
+# The mssg:
+{"message":"You connected to the following path: /","path":"/"}

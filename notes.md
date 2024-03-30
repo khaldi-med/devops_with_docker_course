@@ -59,7 +59,7 @@ docker rm --force <container>
  
 * docker run -v /path/on/host:/path/in/container [...] image
 * docker run --mount type=bind,source="${PWD}",target=/app -it ubuntu bash 	
-
+* -p 3456:8080 map the port 3456 to 8080
 
 
 
