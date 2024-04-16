@@ -1,1 +1,1 @@
-docker run --name backend -p 8080:8080 -e REDIS_HOST=redis -e POSTGRES_HOST=postgres -e POSTGRES_PASSWORD=mypassword -e GIN_MODE=release backend
+docker run -p 8080:8080 -e GIN_MODE=release backend
