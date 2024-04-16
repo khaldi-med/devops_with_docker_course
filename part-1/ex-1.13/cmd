@@ -1,0 +1,2 @@
+docker run --name backend --network backend-network -e REDIS_HOST=redis -e POSTGRES_HOST=postgres -e POSTGRES_PASSWORD=mypassword -e GIN_MODE=release -p 8080:8080 backend
+
