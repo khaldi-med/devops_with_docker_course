@@ -1,6 +1,6 @@
 ## Fro the frontend part
 
-* The commend used to run: 
+* The commends used to run:
 
  `` docker build -t front-app .``
 
