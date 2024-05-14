@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+
+  web-service:
+    image: devopsdockeruh/simple-web-service
+    ports:
+      - 3456:8080
+    container_name: exercise-2.2
+    command: ["sh", "-c", "usr/src/app/", "server"]
+
